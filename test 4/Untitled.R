@@ -1,0 +1,22 @@
+library(tidyverse)
+data("lakers")
+na.omit("lakers")
+view("lacers")
+na.omit(lakers)
+str(lakers)
+lakers$result  <- as.factor(lakers$result)
+view(lakers)
+str(lakers)
+lakers$time <- as.numeric(lakers$time)
+str(lakers)
+na.omit(lakers)
+na.omit("lakers")
+levels(lakers$result)
+lakers$result <- factor(lakers$result,
+                        levels = c("misses","made"))
+levels(lakers$result) 
+lakers$points
+lakers$sucsess <- lakers$points > 1
+view(lakers)
+class(lakers$sucsess)
+str(lakers)
